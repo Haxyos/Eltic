@@ -8,10 +8,12 @@
   <div v-show="count >= 5">BRAVO !</div>
   <button v-on:click="increment()">Compteur</button>
   <button v-on:click="reset()">Reset</button>
+  <Footer/>
 </template>
 
 <script setup>
 import NavBar from '../components/Nav.vue'
+import Footer from '../components/Footer.vue'
 import { ref } from 'vue'
 
 const firstName = 'Willelm'

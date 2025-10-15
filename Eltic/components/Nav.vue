@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <button v-for="(_, tab) in listeComposant" :key="tab" @click="ComposantActuel = tab">{{ listeLibelle[tab] }}</button>
+    <div class="bg-green-700">
+        <button class="cursor-pointer p-5 mx-1" v-for="(_, tab) in listeComposant" :key="tab" @click="ComposantActuel = tab">{{ listeLibelle[tab] }}</button>
         <component :is="listeComposant[ComposantActuel]"></component>
     </div>
 </template>
@@ -31,3 +31,7 @@ const listeComposant = [
 
 ];
 </script>
+
+<style>
+    
+</style>
