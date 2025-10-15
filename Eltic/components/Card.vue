@@ -1,19 +1,19 @@
 <template>
     <div>
-        <div v-for="(_,num) in listeService"
-            class="flex w-11/12 content-center justify-center items-center shadow-xl drop-shadow-sm">
-            <component class="text-xl" >Content</component>
+        <div class="flex w-11/12 content-center justify-center items-center shadow-xl drop-shadow-sm"
+            v-for="service in listeService">
+            {{ service}}
         </div>
     </div>
 </template>
 
-<script>
+<script setup>
 import ElticBorne from '../src/ElticBorne.vue'
 import ElticVideo from '../src/ElticVideo.vue'
 
 const listeService = [
-    "ElticBorne",
-    "ElticVideo"
+    ElticBorne,
+    ElticVideo
 ]
 
 const listeServiceLibelle = [
