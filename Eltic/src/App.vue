@@ -1,4 +1,5 @@
 <template>
+  <NavBar />
   <h1>Eltic entreprise</h1>
   <p>Bienvenu :{{ firstName }}</p>
   <p>Compteur : {{ count }}</p>
@@ -10,6 +11,7 @@
 </template>
 
 <script setup>
+import NavBar from '../components/Nav.vue'
 import { ref } from 'vue'
 
 const firstName = 'Willelm'
