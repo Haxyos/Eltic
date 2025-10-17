@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-green-700">
+    <div class="flex bg-green-700 content-center justify-center items-center">
         <button class="cursor-pointer p-5 mx-1" v-for="(_, tab) in listeComposant" :key="tab" @click="ComposantActuel = tab">{{ listeLibelle[tab] }}</button>
         <component :is="listeComposant[ComposantActuel]"></component>
     </div>
