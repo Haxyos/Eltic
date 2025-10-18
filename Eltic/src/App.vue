@@ -1,23 +1,31 @@
 <template>
-  <NavBar v-if="statuts == true"/>
-  
-  <div v-else>
   <div>
     <h1 class="text-center content-center font-bold text-6xl p-5">Eltic entreprise</h1>
   </div>
-  <Card/>
-  </div>
-  <div></div>
+  <Card v-for="(_,services) in listeService" :title="listeService[services]" :libelle="listeServiceLibelle[services]" :image="listeImageService[services]"/>
   <Footer />
 </template>
 
 <script setup>
-import NavBar from '../components/Nav.vue'
 import Footer from '../components/Footer.vue'
 import Card from '../components/Card.vue'
 
-let statuts = Card.status;
-console.log(statuts)
+
+const listeService = [
+    'ElticBorne',
+    'ElticVideo'
+]
+
+const listeServiceLibelle = [
+    "Eltic : Borne de recharge",
+    "Eltic : Video protection"
+]
+
+const listeImageService = [
+    "../eltic+voiture-electrique020.png",
+    "#"
+]
+
 
 </script>
 
