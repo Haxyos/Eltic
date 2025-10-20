@@ -15,13 +15,14 @@
   <div v-else-if="ServiceActuelle == 'ElticBorne'">
     <NavBorne />
     <ElticBorne />
+    <Footer />
   </div>
   <div v-else-if="ServiceActuelle == 'ElticVideo'">
     <NavVideo />
     <ElticVideo />
+    <Footer />
   </div>
   <button @click="passePage(false)">test retour</button>
-  <Footer />
 </template>
 
 <script setup>
@@ -30,8 +31,8 @@ import Footer from '../components/Footer.vue'
 import Card from '../components/Card.vue'
 import NavBorne from '../components/NavBorne.vue'
 import NavVideo from '../components/NavVideo.vue'
-import ElticBorne from '../components/ElticBorne.vue'
-import ElticVideo from '../components/ElticVideo.vue'
+import ElticBorne from './ElticBorne.vue'
+import ElticVideo from './ElticVideo.vue'
 
 let ServiceActuelle = ''
 

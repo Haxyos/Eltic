@@ -29,3 +29,7 @@ function emission(){
 }
 
 </script>
+
+<style>
+@import 'tailwindcss';
+</style>
