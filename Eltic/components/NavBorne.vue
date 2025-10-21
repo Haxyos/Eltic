@@ -18,6 +18,7 @@ export default {};
 import { ref } from 'vue'
 import Test from '../src/Test.vue'
 import MainMenu from '../src/ElticBorne.vue'
+import NosRéalisation from './nosReal.vue'
 
 const ComposantActuel = ref(MainMenu)
 
@@ -34,7 +35,7 @@ const listeLibelle = [
 const listeComposant = [
   MainMenu,
   'Copropriété',
-  'NosRéalisation',
+  NosRéalisation,
   'ExplicationRecharge',
   'Qualification',
   'Devis',
