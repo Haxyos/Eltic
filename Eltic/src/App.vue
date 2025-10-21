@@ -12,15 +12,13 @@
     @click="(p) => passePage(listeService[services], p)"
   />
   <div v-else-if="ServiceActuelle == 'ElticBorne'">
-    <NavBorne />
+    <NavBorne @retour="pageOn = false" />
     <Footer />
   </div>
   <div v-else-if="ServiceActuelle == 'ElticVideo'">
-    <NavVideo />
-    <ElticVideo />
+    <NavVideo @retour="pageOn = false" />
     <Footer />
   </div>
-  <button @click="passePage(false)">test retour</button>
 </template>
 
 <script setup>
@@ -29,8 +27,6 @@ import Footer from '../components/Footer.vue'
 import Card from '../components/Card.vue'
 import NavBorne from '../components/NavBorne.vue'
 import NavVideo from '../components/NavVideo.vue'
-import ElticBorne from './ElticBorne.vue'
-import ElticVideo from './ElticVideo.vue'
 
 let ServiceActuelle = ''
 
@@ -41,7 +37,6 @@ const listeServiceLibelle = ['Eltic : Borne de recharge', 'Eltic : Video protect
 const listeImageService = ['../eltic+voiture-electrique020.png', '#']
 
 let pageOn = ref(false)
-const composantActuel = ref(null)
 
 function passePage(val, val2) {
   pageOn.value = val

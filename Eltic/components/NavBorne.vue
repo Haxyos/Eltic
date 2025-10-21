@@ -1,5 +1,8 @@
 <template>
   <div class="flex bg-green-700 content-center justify-center items-center">
+    <div class="left-0">
+    <button @click="emission"><img class="h-15 w-15 cursor-pointer" src="../public/left-arrow-circle-svgrepo-com.svg" alt="left arrow"></img></button>
+  </div>
     <button
       class="cursor-pointer p-5 mx-1"
       v-for="(_, tab) in listeComposant"
@@ -15,7 +18,7 @@
 export default {};
 
 <script setup>
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import MainMenu from '@/ElticBorne.vue'
 import Copropriété from './Copropriété.vue'
 import NosRéalisation from './nosReal.vue'
@@ -42,6 +45,15 @@ const listeLibelle = {
   Qualification: 'Qualification',
   Devis: 'Devis',
 }
+
+const emits = defineEmits([
+    'retour'
+])
+function emission(){
+    emits('retour');
+}
 </script>
 
-<style></style>
+<style>
+@import 'tailwindcss';
+</style>
