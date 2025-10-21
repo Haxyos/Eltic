@@ -15,32 +15,33 @@
 export default {};
 
 <script setup>
-import { ref } from 'vue'
-import Test from '../src/Test.vue'
-import MainMenu from '../src/ElticBorne.vue'
+import { ref, watch } from 'vue'
+import MainMenu from '@/ElticBorne.vue'
+import Copropriété from './Copropriété.vue'
 import NosRéalisation from './nosReal.vue'
+import Recharge from './Recharge.vue'
+import Qualification from './Qualification.vue'
+import Devis from './Devis.vue'
 
-const ComposantActuel = ref(MainMenu)
+const ComposantActuel = ref('ElticBorne')
 
-const listeLibelle = [
-  'Accueil',
-  'Copropriété',
-  'Nos Réalisation',
-  'La recharge',
-  'Qualification',
-  'Devis',
-  'Test',
-]
-
-const listeComposant = [
-  MainMenu,
-  'Copropriété',
+const listeComposant = {
+  ElticBorne: MainMenu,
+  Copropriété,
   NosRéalisation,
-  'ExplicationRecharge',
-  'Qualification',
-  'Devis',
-  Test,
-]
+  Recharge,
+  Qualification,
+  Devis,
+}
+
+const listeLibelle = {
+  ElticBorne: 'Accueil',
+  Copropriété: 'Copropriété',
+  NosRéalisation: 'Nos Réalisations',
+  Recharge: 'La Recharge',
+  Qualification: 'Qualification',
+  Devis: 'Devis',
+}
 </script>
 
 <style></style>

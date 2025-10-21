@@ -22,10 +22,10 @@ const props = defineProps({
 })
 
 const emits = defineEmits([
-    'true', 'false'
+    'click'
 ])
 function emission(){
-    emits('true', props.title);
+    emits('click', props.title);
 }
 
 </script>

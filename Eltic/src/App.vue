@@ -9,12 +9,10 @@
     :title="listeService[services]"
     :libelle="listeServiceLibelle[services]"
     :image="listeImageService[services]"
-    @true="(p) => passePage(true, p)"
-    @false="(p) => passePage(false, p)"
+    @click="(p) => passePage(listeService[services], p)"
   />
   <div v-else-if="ServiceActuelle == 'ElticBorne'">
     <NavBorne />
-    <ElticBorne />
     <Footer />
   </div>
   <div v-else-if="ServiceActuelle == 'ElticVideo'">
@@ -43,6 +41,7 @@ const listeServiceLibelle = ['Eltic : Borne de recharge', 'Eltic : Video protect
 const listeImageService = ['../eltic+voiture-electrique020.png', '#']
 
 let pageOn = ref(false)
+const composantActuel = ref(null)
 
 function passePage(val, val2) {
   pageOn.value = val
