@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed w-full bg-sky-700 text-white bottom-0">
+  <div class="fixed w-full bg-[#41b6b3] text-white bottom-0">
     <div class="grid grid-cols-12 grid-rows-6 gap-2">
     <h1 class="text-left row-span-1 col-span-4 text-2xl">Contact commercial et technique :</h1>
     <img class="row-span-3 col-span-1 row-start-2 w-25 h-25" src="../eltic_IRVE_contact1a.gif" alt="0607288720 bornes-de-recharge@eltic.fr"></img>

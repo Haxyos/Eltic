@@ -1,14 +1,12 @@
 <template>
-  <div class="flex bg-green-700 content-center justify-center items-center">
-    <div class="left-0">
-    <button @click="emission"><img class="h-15 w-15 cursor-pointer" src="../public/left-arrow-circle-svgrepo-com.svg" alt="left arrow"></img></button>
+  <div class="absolute left-0">
+    <button @click="emission"><img class="h-15 w-15 cursor-pointer" src="../public/left-arrow-circle-svgrepo-com.svg"
+        alt="left arrow"></img></button>
   </div>
-    <button
-      class="cursor-pointer p-5 mx-1"
-      v-for="(_, tab) in listeComposant"
-      :key="tab"
-      @click="ComposantActuel = tab"
-    >
+  <div class="flex bg-green-600 content-center justify-center items-center">
+
+    <button class="cursor-pointer p-5 mx-1" v-for="(_, tab) in listeComposant" :key="tab"
+      @click="ComposantActuel = tab">
       {{ listeLibelle[tab] }}
     </button>
   </div>
@@ -47,10 +45,10 @@ const listeLibelle = {
 }
 
 const emits = defineEmits([
-    'retour'
+  'retour'
 ])
-function emission(){
-    emits('retour');
+function emission() {
+  emits('retour');
 }
 </script>
 
