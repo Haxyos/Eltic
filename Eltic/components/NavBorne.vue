@@ -3,9 +3,9 @@
     <button @click="emission"><img class="h-15 w-15 cursor-pointer" src="../public/left-arrow-circle-svgrepo-com.svg"
         alt="left arrow"></img></button>
   </div>
-  <div class="flex bg-green-600 content-center justify-center items-center">
+  <div class="flex bg-green-600 content-center justify-center items-center p-2">
 
-    <button class="cursor-pointer p-5 mx-1" v-for="(_, tab) in listeComposant" :key="tab"
+    <button class="cursor-pointer p-3 mx-1 hover:shadow-2xl hover:drop-shadow-2xl duration-200 rounded-2xl" v-for="(_, tab) in listeComposant" :key="tab"
       @click="ComposantActuel = tab">
       {{ listeLibelle[tab] }}
     </button>
