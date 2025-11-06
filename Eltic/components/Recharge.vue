@@ -1,4 +1,5 @@
 <template>
+    <NavBorne />
     <div class="flex content-center justify-center items-center m-5">
         <h1 class="w-[90%] font-bold text-3xl text-center p-2 m-2">Tout pour bien comprendre la recharge</h1>
     </div>
@@ -49,11 +50,14 @@
             </div>
         </div>
     </div>
-
+    <Footer />
 
 </template>
 
-<script setup></script>
+<script setup>
+import NavBorne from './NavBorne.vue';
+import Footer from './Footer.vue';
+</script>
 
 <style>
 @import 'tailwindcss';

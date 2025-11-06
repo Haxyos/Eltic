@@ -21,7 +21,7 @@ export default {};
 
 <script setup>
 import { ref } from 'vue'
-import MainMenu from '@/ElticVideo.vue'
+import MainMenu from './ElticVideo.vue'
 
 const ComposantActuel = ref('ElticVideo')
 

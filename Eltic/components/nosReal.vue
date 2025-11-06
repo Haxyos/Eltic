@@ -1,6 +1,7 @@
 /* css à faire */
 
 <template>
+  <NavBorne />
   <div>
     <h1>Voici quelques unes de nos réalisation :</h1>
   </div>
@@ -10,9 +11,13 @@
       {{ description[real] }}
     </div>
   </div>
+  <Footer />
 </template>
 
 <script setup>
+import NavBorne from './NavBorne.vue'
+import Footer from './Footer.vue'
+
 let listeReal = [
   "Borne T2S à 7,4 kW dans le sous-sol d'un immeuble en copropriété pour Y.L.",
   "Borne T2S à 7,4 kW Schneider Charge dans le garage d'une maison individuelle (avec pilotage dynamique de la puissance de charge par délesteur)",
