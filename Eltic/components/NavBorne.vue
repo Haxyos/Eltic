@@ -7,10 +7,11 @@
 
     <button class="cursor-pointer p-3 mx-1 hover:shadow-2xl hover:drop-shadow-2xl duration-200 rounded-2xl" v-for="(_, tab) in listeComposant" :key="tab"
       @click="ComposantActuel = tab">
-      {{ listeLibelle[tab] }}
+      {{ listeRoute[tab] }}
     </button>
   </div>
   <component :is="listeComposant[ComposantActuel]"></component>
+  
 </template>
 
 export default {};
@@ -43,6 +44,15 @@ const listeLibelle = {
   Qualification: 'Qualification',
   Devis: 'Devis',
 }
+
+const listeRoute = [
+  '<router-link to="/ElticBorne">Accueil</router-link>',
+  '<router-link to="/Copropriété">Copropriété</router-link>',
+  '<router-link to="/nosReal">Nos Réalisation</router-link>',
+  '<router-link to="/Recharge">La Recharge</router-link>',
+  '<router-link to="/Qualification">Qualification</router-link>',
+  '<router-link to="/Devis">Devis</router-link>'
+]
 
 const emits = defineEmits([
   'retour'
