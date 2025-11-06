@@ -1,5 +1,5 @@
 <template>
-  <div class="h-[60vh] content-center ">
+  <div class="h-[60vh] content-center">
   <div>
     <h1 class="text-center text-3xl font-bold">
       Bienvenue sur le site de Eltic : Borne de Recharge
