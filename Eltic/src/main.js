@@ -9,15 +9,16 @@ import NosReal from '../components/nosReal.vue'
 import Recharge from '../components/Recharge.vue'
 import ElticBorne from '../components/ElticBorne.vue'
 import ElticVideo from '../components/ElticVideo.vue'
+import HomePage from '../components/HomePage.vue'
 
 export const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: App },
+    { path: '/', component: HomePage },
     { path: '/Copropriete', component: Copropriété },
     { path: '/Devis', component: Devis },
     { path: '/Qualification', component: Qualification },
-    { path: '/nosReal', component: NosReal },
+    { path: '/Realisation', component: NosReal },
     { path: '/Recharge', component: Recharge },
     { path: '/ElticBorne', component: ElticBorne },
     { path: '/ElticVideo', component: ElticVideo },
