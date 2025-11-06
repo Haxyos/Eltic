@@ -1,6 +1,6 @@
 <template>
   <div class="absolute left-0">
-    <RouterLink to="/"><img class="h-15 w-15 cursor-pointer" src="../public/left-arrow-circle-svgrepo-com.svg"
+    <RouterLink to="/"><img class="h-15 w-15 cursor-pointer" src="@/public/left-arrow-circle-svgrepo-com.svg"
         alt="left arrow"></img></RouterLink>
   </div>
   <div class="flex bg-green-600 content-center justify-center items-center p-2">

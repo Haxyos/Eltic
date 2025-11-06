@@ -4,7 +4,7 @@
         <h1 class="w-[90%] font-bold text-3xl text-center p-2 m-2">Tout pour bien comprendre la recharge</h1>
     </div>
     <div class="flex gap-10 my-2 mx-20 shadow-2xl p-5">
-        <img src="../public/eltic_IRVE_la-recharge-01a.gif" alt="image d'explication de la recharge"></img>
+        <img src="@/public/eltic_IRVE_la-recharge-01a.gif" alt="image d'explication de la recharge"></img>
         <div>
             <div>
                 <h1 class="text-xl text-shadow-lg font-bold my-5">La recharge électrique : 5 éléments à prendre en
