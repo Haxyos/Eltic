@@ -21,12 +21,13 @@
 </template>
 <script setup>
 import Card from '@/components/Card.vue'
+import voitureImg from '@/public/elticvoiture-electrique020.png'
 
 const listeService = ['ElticBorne', 'ElticVideo']
 
 const listeServiceLibelle = ['Eltic : Borne de recharge', 'Eltic : Video protection']
 
-const listeImageService = ['@/public/eltic+voiture-electrique020.png', '#']
+const listeImageService = [voitureImg, '#']
 
 const listeDescription = [
   " Installateur de <span class='font-bold text-shadow-lg'>bornes de recharge</span > pour véhicules <span class='font-bold text-shadow-lg'>électriques et hybrides rechargeables</span>.<br><span class='font-bold text-shadow-lg'>Architecte d'Infrastructures collectives</span> de Recharge pour Véhicules Électriques. <br>Installateur <span class='font-bold text-shadow-lg'>d'IRVE</span> collectives en <span class='font-bold text-shadow-lg'>immeubles</span> d'habitation et en <span class='font-bold text-shadow-lg'>copropriétés</span> ",

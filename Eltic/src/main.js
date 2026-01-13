@@ -10,6 +10,8 @@ import Recharge from '@/components/Recharge.vue'
 import ElticBorne from '@/components/ElticBorne.vue'
 import ElticVideo from '@/components/ElticVideo.vue'
 import HomePage from '@/components/HomePage.vue'
+import AidesPrimes from '@/components/AidesPrimes.vue'
+import MentionsLegales from '@/components/MentionsLegales.vue'
 
 export const router = createRouter({
   history: createWebHistory(),
@@ -20,8 +22,10 @@ export const router = createRouter({
     { path: '/Qualification', component: Qualification },
     { path: '/Realisation', component: NosReal },
     { path: '/Recharge', component: Recharge },
+    { path: '/AidesPrimes', component: AidesPrimes },
     { path: '/ElticBorne', component: ElticBorne },
     { path: '/ElticVideo', component: ElticVideo },
+    { path: '/MentionsLegales', component: MentionsLegales },
   ],
 })
 const app = createApp(App)
