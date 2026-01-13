@@ -1,23 +1,24 @@
 <template>
-  <div>
-    <h1 class="text-center content-center font-bold text-6xl p-5">Eltic entreprise</h1>
+  <div class="bg-gradient-to-b from-green-50 via-white to-green-50 min-h-screen">
+    <h1 class="text-center content-center font-bold text-6xl p-5 text-green-700">Eltic entreprise</h1>
+    
+    <RouterLink to="/ElticBorne">
+      <Card
+        :title="listeService[0]"
+        :libelle="listeServiceLibelle[0]"
+        :image="listeImageService[0]"
+        :description="listeDescription[0]"
+      />
+    </RouterLink>
+    <RouterLink to="/ElticVideo">
+      <Card
+        :title="listeService[1]"
+        :libelle="listeServiceLibelle[1]"
+        :image="listeImageService[1]"
+        :description="listeDescription[1]"
+      />
+    </RouterLink>
   </div>
-  <RouterLink to="/ElticBorne">
-    <Card
-      :title="listeService[0]"
-      :libelle="listeServiceLibelle[0]"
-      :image="listeImageService[0]"
-      :description="listeDescription[0]"
-    />
-  </RouterLink>
-  <RouterLink to="/ElticVideo">
-    <Card
-      :title="listeService[1]"
-      :libelle="listeServiceLibelle[1]"
-      :image="listeImageService[1]"
-      :description="listeDescription[1]"
-    />
-  </RouterLink>
 </template>
 <script setup>
 import Card from '@/components/Card.vue'

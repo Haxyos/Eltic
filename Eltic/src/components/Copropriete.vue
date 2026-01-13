@@ -32,7 +32,7 @@
           <!-- Section Solutions d'installation -->
           <div class="mb-16">
             <div class="mb-8 flex items-center gap-4">
-              <h2 class="text-3xl font-bold text-orange-600">🔧 Nos solutions en copropriété</h2>
+              <h2 class="text-3xl font-bold text-orange-600">Nos solutions en copropriété</h2>
               <div class="flex-grow h-1 bg-gradient-to-r from-orange-600 to-transparent rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -85,7 +85,7 @@
           <!-- Section Aides et Primes -->
           <div class="mb-16">
             <div class="bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg shadow-lg p-8 border-l-4 border-orange-500">
-              <h2 class="text-3xl font-bold text-orange-700 mb-6">💰 Aides et primes disponibles</h2>
+              <h2 class="text-3xl font-bold text-orange-700 mb-6">Aides et primes disponibles</h2>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white rounded-lg p-6 border-t-2 border-orange-500">
                   <h3 class="text-lg font-bold text-orange-600 mb-2">Infrastructure Collective</h3>
@@ -117,7 +117,7 @@
           <!-- Section Avantages -->
           <div class="mb-16">
             <div class="mb-8 flex items-center gap-4">
-              <h2 class="text-3xl font-bold text-green-600">✨ Avantages de nos solutions</h2>
+              <h2 class="text-3xl font-bold text-green-600">Avantages de nos solutions</h2>
               <div class="flex-grow h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

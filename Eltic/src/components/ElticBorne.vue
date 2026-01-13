@@ -19,7 +19,7 @@
                 <p class="text-lg font-semibold text-green-600 mt-2">Etude</p>
               </div>
               <div class="text-center p-4 bg-green-100 rounded-lg">
-                <span class="text-2xl font-bold text-green-700">🔧</span>
+                <span class="text-2xl font-bold text-green-700">→</span>
                 <p class="text-lg font-semibold text-green-600 mt-2">Installation</p>
               </div>
               <div class="text-center p-4 bg-green-100 rounded-lg">

@@ -14,7 +14,7 @@
           <!-- Maisons Individuelles -->
           <div class="mb-16">
             <div class="mb-8 flex items-center gap-4">
-              <h2 class="text-3xl font-bold text-green-600">🏠 Maisons Individuelles</h2>
+              <h2 class="text-3xl font-bold text-green-600">Maisons Individuelles</h2>
               <div class="flex-grow h-1 bg-gradient-to-r from-green-600 to-transparent rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -38,7 +38,7 @@
           <!-- Copropriétés -->
           <div class="mb-16">
             <div class="mb-8 flex items-center gap-4">
-              <h2 class="text-3xl font-bold text-orange-600">🏢 Copropriétés</h2>
+              <h2 class="text-3xl font-bold text-orange-600">Copropriétés</h2>
               <div class="flex-grow h-1 bg-gradient-to-r from-orange-600 to-transparent rounded-full"></div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -62,7 +62,7 @@
           <!-- Infrastructure Collective -->
           <div>
             <div class="mb-8 flex items-center gap-4">
-              <h2 class="text-3xl font-bold" style="color: #42C6C6;">🔌 Infrastructure Collective</h2>
+              <h2 class="text-3xl font-bold" style="color: #42C6C6;">Infrastructure Collective</h2>
               <div class="flex-grow h-1 rounded-full" style="background: linear-gradient(90deg, #42C6C6 0%, transparent 100%);"></div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
